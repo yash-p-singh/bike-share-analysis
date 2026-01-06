@@ -4,7 +4,7 @@ WITH
       start_station_name,
       COUNT(ride_id) AS count_start,
     FROM
-      hello-476408.CyclisticTrips.BikeTrips
+      BikeTrips
     WHERE
       member_casual = 'casual'
       AND start_station_name IS NOT NULL
@@ -16,7 +16,7 @@ WITH
       end_station_name,
       COUNT(ride_id) AS count_end,
     FROM
-      hello-476408.CyclisticTrips.BikeTrips
+      BikeTrips
     WHERE
       member_casual = 'casual'
       AND end_station_name IS NOT NULL
